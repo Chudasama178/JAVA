@@ -1,12 +1,13 @@
 
 import java.util.Scanner;
 
-class Index{
+public class Index{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Your Number:");
-        int n1=sc.nextInt();
-        sc.close();
+        int n1;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter Your Number:");
+            n1 = sc.nextInt();
+        }
         System.out.println(n1);
         
     }
